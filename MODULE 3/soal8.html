@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <title>Form Pendaftaran</title>
+  </head>
+
+  <body>
+    <center>
+      <table border="2" width="530" height="500">
+        <tr bgcolor="skyblue" height="80">
+          <td
+            style="color: red; font-family: Times New Roman; font-size: 14px"
+            align="center"
+            valign="center"
+          >
+            <h1>Pendaftaran Kursus</h1>
+          </td>
+        </tr>
+
+        <tr bgcolor="grey">
+          <td>
+            <table>
+              <tr>
+                <b style="font-family: Times New Roman; font-size: 20px"
+                  >Data Diri
+                </b>
+                <br />
+                <style>
+                  td {
+                    line-height: 1;
+                  }
+                </style>
+
+                <br />
+                <td>
+                  <tr>
+                    <td>Nama</td>
+                    <td>
+                      <input type="text" name="nama" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>NIM</td>
+                    <td>
+                      <input type="text" name="nim" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>E-mail</td>
+                    <td>
+                      <input type="text" name="email" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>
+                      <input type="date" name="tanggal_lahir" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="vertical-align: top">Jenis Kelamin</td>
+                    <td>
+                      <input type="radio" name="jenis_kelamin" value="L" />
+                      Laki-Laki
+                      <br />
+                      <input type="radio" name="jenis_kelamin" value="P" />
+                      Perempuan
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="vertical-align: top">Pilih Program Kursus</td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="kursus_satu"
+                        value="c_hashtag"
+                      />
+                      C#
+                      <br />
+                      <input type="checkbox" name="kursus_dua" value="java" />
+                      Java
+                      <br />
+                      <input type="checkbox" name="kursus_tiga" value="sql" />
+                      SQL
+                      <br />
+                      <input
+                        type="checkbox"
+                        name="kursus_empat"
+                        value="html_php"
+                      />
+                      HTML dan PHP
+                      <br />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Pilihan Hari atau Jam Kursus</td>
+                    <td>
+                      <select name="hari">
+                        <option value="satu">Senin - Rabu/09.00 - 11.00</option>
+                        <option value="dua">
+                          Kamis - Jum'at/08.00 - 10.00
+                        </option>
+                        <option value="tiga">Minggu/14.00 - 16.00</option>
+                        <option value="empat">
+                          Senin - Selasa/09.00 - 12.00
+                        </option>
+                        <option value="lima">Sabtu/08.00 - 10.00</option>
+                      </select>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr bgcolor="lightsalmon">
+          <td>
+            <table>
+              <tr>
+                Komentar Anda
+                <br />
+                <textarea
+                  name="deskripsi"
+                  cols="45"
+                  rows="5"
+                  align="center"
+                ></textarea>
+                <br />
+                <input type="reset" value="Reset" name="Reset" />
+                <input type="submit" value="Submit" name="Submit" />
+                <input type="button" value="Cancel" name="Cancel" />
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
